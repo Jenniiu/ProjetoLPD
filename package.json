@@ -11,5 +11,10 @@
   "license": "ISC",
   "devDependencies": {
     "tailwindcss": "^3.3.1"
+  },
+  "dependencies": {
+    "flowbite": "^1.6.5",
+    "react-slick": "^0.29.0",
+    "slick-carousel": "^1.8.1"
   }
 }
