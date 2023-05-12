@@ -1,322 +1,727 @@
 <!doctype html>
 <html>
+
 <head>
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="./output-style.css">
   <link rel="stylesheet" href="./style.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
   <title>LPD</title>
   <script defer src="./script.js"></script>
-  <link href="https://cdnjs.cloudflare.com/ajax/libs/flowbite/1.6.5/flowbite.min.css"  rel="stylesheet" />
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/flowbite/1.6.5/flowbite.min.css" rel="stylesheet" />
 
 </head>
- <body>
+
+<body>
+  <div class="container">
+  <a href="https://wa.me/5585988523162" class="icon" target="_blank">
+    <i class="fab fa-whatsapp"></i>
+  </a>
+</div>
   <div class="w-full h-full bg-no-repeat bg-center bg-cover py-12"
-  style="background-image: url('https://lh3.googleusercontent.com/pw/AJFCJaWLzBXTqBViR6s7DWjuICVoVvd2rapkjgP3vO8ZwnRVMg8dgkNyYa1ubpGSo0yAvshYWgCwUtCPlSQMlkGBUs820mhpLerRhLsF06M_1zQF-V0vw_SsPQxMNSpuMSXS5xltAMiXxavilY02LrgxGdSs_HQBsYqULSgjL_uIalg5Nahk4CGB_ZSVWRAEZ5bp_3yMZkwTdxmCNYLdIJ33UWr-RDao7XeHQv21iycmjHfLYK2SvYUjr1KtZdsl_Q5Yd1qaTTWChryl8bXvPl2dmaH56bYQroSm6isBdoFEGcjbrolUmROhDUZJbtFE68RPQa4glLx1KLYKqaHhTJ9gLvxTenNKcOyOhH8iTV7cZUT7m-jDG7B-UkZbc6HLRAZV4LsvVmicQtpVuggqIZTys9HA9U6bSc0SlfQUTaUPu12BdiQJmLsv1SZiPFUGoSAg50JL-Z4W6d_JHE7D1BZqGb4ZR3b531FMKDrWRzgxlvHNRfJwAarZ1krOyq0Z5COt__qUSYsSwP9PPF8CyZAsGxblVH6yU0xGscN-GaAXMdPIjneWrCIW87w7ptLT5oybAaUsj59KJM9idqBDBIQlUulmP-GgsRc_sYTyU5oCCBJqtc1toCNM-PtHjQpZ-vhPgX76JCbD70vQ4L24swsFQ92_mTilqgGd-AWriemhJLBTURh1z8bUXrgy_2k3W_HOfioh7xOyPYjt6Upr7VY65VEV33OiOwiL0COVmXyn46gV3QL5m2SyZ6ItPLrpv3-E_-w6fzm2myw69FPBcckr4vP27eoraKieQ1wydAfcRxMWifqD2Rf2hzVe0owZhh-DNCo5FLBNePOu2IerDbIfSJ1mWfxcs9rvOJvGB3e81rl8c1q6QJl2Hm3DmLvmCfWhJU4Gc3ILygIGo6dBZfmdPXQ5nJpj6QKc3-KndSF_Sq9_JkiLxAnrJ9OZtnW_vBMD3j-Hni6_eY1AjGLt_pQF4htrwMoI_N0=w1366-h657-s-no?authuser=0')">
-  
-<nav class="bg-[#2B2B2B] dark:bg-gray-900 fixed w-full z-20 top-0 left-0">
+    style="background-image: url('https://lh3.googleusercontent.com/pw/AJFCJaWLzBXTqBViR6s7DWjuICVoVvd2rapkjgP3vO8ZwnRVMg8dgkNyYa1ubpGSo0yAvshYWgCwUtCPlSQMlkGBUs820mhpLerRhLsF06M_1zQF-V0vw_SsPQxMNSpuMSXS5xltAMiXxavilY02LrgxGdSs_HQBsYqULSgjL_uIalg5Nahk4CGB_ZSVWRAEZ5bp_3yMZkwTdxmCNYLdIJ33UWr-RDao7XeHQv21iycmjHfLYK2SvYUjr1KtZdsl_Q5Yd1qaTTWChryl8bXvPl2dmaH56bYQroSm6isBdoFEGcjbrolUmROhDUZJbtFE68RPQa4glLx1KLYKqaHhTJ9gLvxTenNKcOyOhH8iTV7cZUT7m-jDG7B-UkZbc6HLRAZV4LsvVmicQtpVuggqIZTys9HA9U6bSc0SlfQUTaUPu12BdiQJmLsv1SZiPFUGoSAg50JL-Z4W6d_JHE7D1BZqGb4ZR3b531FMKDrWRzgxlvHNRfJwAarZ1krOyq0Z5COt__qUSYsSwP9PPF8CyZAsGxblVH6yU0xGscN-GaAXMdPIjneWrCIW87w7ptLT5oybAaUsj59KJM9idqBDBIQlUulmP-GgsRc_sYTyU5oCCBJqtc1toCNM-PtHjQpZ-vhPgX76JCbD70vQ4L24swsFQ92_mTilqgGd-AWriemhJLBTURh1z8bUXrgy_2k3W_HOfioh7xOyPYjt6Upr7VY65VEV33OiOwiL0COVmXyn46gV3QL5m2SyZ6ItPLrpv3-E_-w6fzm2myw69FPBcckr4vP27eoraKieQ1wydAfcRxMWifqD2Rf2hzVe0owZhh-DNCo5FLBNePOu2IerDbIfSJ1mWfxcs9rvOJvGB3e81rl8c1q6QJl2Hm3DmLvmCfWhJU4Gc3ILygIGo6dBZfmdPXQ5nJpj6QKc3-KndSF_Sq9_JkiLxAnrJ9OZtnW_vBMD3j-Hni6_eY1AjGLt_pQF4htrwMoI_N0=w1366-h657-s-no?authuser=0')">
+    
+<nav class="bg-[#2B2B2B] dark:bg-gray-900 fixed w-full z-50 top-0 left-0">
   <div class="max-w-screen-xl flex flex-wrap items-center justify-between mx-auto p-4">
   <a class="flex items-center">
-      <img src="/img/Limmerk-removebg-preview (3) (2).png" class="h-12 mr-6" alt="Flowbite Logo">
+    <img src="/img/Limmerk-removebg-preview (3) (2).png" class="h-12 mr-6" alt="Flowbite Logo">
   </a>
   <div class="flex md:order-2">
-      <button type="button" class="text-[#D0AC6B] bg-[#2B2B2B] border-[#D0AC6B] border rounded hover:[#D0AC6B] hover:bg-[#D0AC6B] hover:border-[#D0AC6B] hover:text-white font-medium rounded-lg text-sm px-4 py-2 text-center mr-3 md:mr-0">Fale conosco</button>
-      <button data-collapse-toggle="navbar-sticky" type="button" class="inline-flex items-center p-2 text-sm text-gray-500 rounded-lg md:hidden hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-gray-200 dark:text-gray-400 dark:hover:bg-gray-700 dark:focus:ring-gray-600" aria-controls="navbar-sticky" aria-expanded="false">
-        <span class="sr-only">Open main menu</span>
-        <svg class="w-6 h-6" aria-hidden="true" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M3 5a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 10a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 15a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1z" clip-rule="evenodd"></path></svg>
-      </button>
+      <button type="button" class="text-[#D0AC6B] bg-[#2B2B2B] border-[#D0AC6B] border rounded hover:[#D0AC6B] hover:bg-[#D0AC6B] hover:border-[#D0AC6B] hover:text-white font-medium text-sm px-4 py-2 text-center mr-3 md:mr-0">Fale
+        conosco</button>
+        <button data-collapse-toggle="navbar-sticky" type="button"
+            class="inline-flex items-center p-2 text-sm text-gray-500 rounded-lg md:hidden hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-gray-200 dark:text-gray-400 dark:hover:bg-gray-700 dark:focus:ring-gray-600"
+            aria-controls="navbar-sticky" aria-expanded="false">
+            <span class="sr-only">Open main menu</span>
+            <svg class="w-6 h-6" aria-hidden="true" fill="currentColor" viewBox="0 0 20 20"
+              xmlns="http://www.w3.org/2000/svg">
+              <path fill-rule="evenodd"
+                d="M3 5a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 10a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 15a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1z"
+                clip-rule="evenodd"></path>
+            </svg>
+          </button>
   </div>
   <div class="items-center justify-between hidden w-full md:flex md:w-auto md:order-1" id="navbar-sticky">
     <ul class="flex flex-col p-4 md:p-0 mt-4 font-medium border border-[#2B2B2B] rounded-lg bg-[#2B2B2B] md:flex-row md:space-x-8 md:mt-0 md:border-0 md:bg- dark:bg-gray-800 md:dark:bg-gray-900 dark:border-gray-700">
       <li>
-        <a href="#" class="block py-2 pl-3 pr-4 text-[#D0AC6B] rounded hover:bg-gray-100 md:hover:bg-transparent md:hover:text-white md:p-0 md:dark:hover:text-white dark:text-white dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent dark:border-gray-700" aria-current="page">INÍCIO</a>
+        <a href="#"
+          class="block py-2 pl-3 pr-4 text-[#D0AC6B] rounded hover:bg-gray-100 md:hover:bg-transparent md:hover:text-white md:p-0 md:dark:hover:text-white dark:text-white dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent dark:border-gray-700"
+          aria-current="page">INÍCIO</a>
       </li>
       <li>
-        <a href="#" class="block py-2 pl-3 pr-4 text-[#D0AC6B] rounded hover:bg-gray-100 md:hover:bg-transparent md:hover:text-white md:p-0 md:dark:hover:text-white dark:text-white dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent dark:border-gray-700">SERVIÇOS</a>
+        <a href="#"
+          class="block py-2 pl-3 pr-4 text-[#D0AC6B] rounded hover:bg-gray-100 md:hover:bg-transparent md:hover:text-white md:p-0 md:dark:hover:text-white dark:text-white dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent dark:border-gray-700">SERVIÇOS</a>
       </li>
       <li>
-        <a href="#" class="block py-2 pl-3 pr-4 text-[#D0AC6B] rounded hover:bg-gray-100 md:hover:bg-transparent md:hover:text-white md:p-0 md:dark:hover:text-white dark:text-white dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent dark:border-gray-700">QUEM SOMOS</a>
+        <a href="#"
+          class="block py-2 pl-3 pr-4 text-[#D0AC6B] rounded hover:bg-gray-100 md:hover:bg-transparent md:hover:text-white md:p-0 md:dark:hover:text-white dark:text-white dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent dark:border-gray-700">QUEM
+          SOMOS</a>
       </li>
       <li>
-        <a href="#" class="block py-2 pl-3 pr-4 text-[#D0AC6B] rounded hover:bg-gray-100 md:hover:bg-transparent md:hover:text-white md:p-0 md:dark:hover:text-white dark:text-white dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent dark:border-gray-700">BLOG</a>
+        <a href="#"
+          class="block py-2 pl-3 pr-4 text-[#D0AC6B] rounded hover:bg-gray-100 md:hover:bg-transparent md:hover:text-white md:p-0 md:dark:hover:text-white dark:text-white dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent dark:border-gray-700">BLOG</a>
       </li>
     </ul>
   </div>
-  </div>
+</div>
 </nav>
 
 
-  <!-- Banner -->
+    <!-- Banner -->
     <div class="py-20 text-center text-white -mb-0.5">
-       <img class="pb-2 mx-auto pt-8" src="/img/Limmerk (3).png" alt="">
-       <h3 class="mb-6 text-base font-normal">Lorem ipsum dolor sit amet, consectetur adipiscing elit.<br>Aliquam tincidunt diam at vestibulum pulvinar.</h3>
-       <button type="button" class="block text-center inline-flex items-center text-[#D0AC6B] bg-[#2B2B2B] border-[#D0AC6B] border rounded hover:[#D0AC6B] hover:bg-[#D0AC6B] hover:border-[#D0AC6B] hover:text-white font-medium rounded-lg text-sm px-4 py-2 text-center mr-3 md:mr-0">Podemos te ajudar</button>
+      <img class="pb-2 mx-auto pt-8" src="/img/Limmerk (3).png" alt="">
+      <h3 class="mb-6 text-base font-normal">Lorem ipsum dolor sit amet, consectetur adipiscing elit.<br>Aliquam
+        tincidunt diam at vestibulum pulvinar.</h3>
       <div></div>
-       <a role="button" href="#" class="block text-white font-medium rounded-lg text-sm pt-3 pb-1 text-center inline-flex items-center">
+      <button type="button"
+        class="items-center text-[#D0AC6B] bg-[#2B2B2B] border-[#D0AC6B] border rounded hover:[#D0AC6B] hover:bg-[#D0AC6B] hover:border-[#D0AC6B] hover:text-white font-medium text-sm px-4 py-2 text-center mr-3 md:mr-0">Podemos
+        te ajudar</button>
+      <div></div>
+      <a role="button" href="#"
+        class="flex items-center justify-center text-white font-medium rounded-lg text-sm pt-3 pb-1">
         <img aria-hidden="true" class="w-14 h-14" src="/img/icons8-seta-para-expandir-50.png"></img>
-       </a>
-      </div>
+      </a>
     </div>
+  </div>
   </div>
   </div>
   <!-- Estatísticas-->
   <section class="md:h-full flex items-center text-[#2B2B2B] font-medium bg-[#D0AC6B] bg-opacity-80">
     <div class="container px-5 py-20 mx-auto justify-center">
-        <div class="flex flex-wrap align-center justify-center">
-            <div class="p-6 sm:w-1/2 lg:w-1/4">
-                <div class="bg-white rounded-2xl overflow-hidden">
-                    <div class="p-6 flex space-x-6 underline align-center">
-                        <p class="leading-relaxed my-3 ml-2">Lorem ipsum<br>dolor sit amet</p>
-                        <div class="flex items-center flex-wrap">
-                                <img class="w-6 h-6 ml-6 mr-6" src="/img/calendar.svg">
-                                </img>
-                        </div>
-                    </div>
-                </div>
-            </div>
-              <div class="p-6 sm:w-1/2 lg:w-1/4">
-              <div class="bg-white rounded-2xl overflow-hidden">
-                  <div class="p-6 flex space-x-6 underline align-center">
-                      <p class="leading-relaxed my-3 ml-2">Lorem ipsum<br>dolor sit amet</p>
-                      <div class="flex items-center flex-wrap">
-                              <img class="w-6 h-6 ml-6 mr-6" src="/img/calendar.svg">
-                              </img>
-                      </div>
-                  </div>
+      <div class="flex flex-wrap align-center justify-center">
+        <div class="p-6 sm:w-1/2 lg:w-1/4">
+          <div class="bg-white rounded-2xl overflow-hidden">
+            <div class="p-6 flex space-x-6 underline align-center">
+              <p class="leading-relaxed my-3 ml-2">Lorem ipsum<br>dolor sit amet</p>
+              <div class="flex items-center flex-wrap">
+                <img class="w-6 h-6 ml-6 mr-6" src="/img/calendar.svg">
+                </img>
               </div>
-          </div>
-          <div class="p-6 sm:w-1/2 lg:w-1/4">
-            <div class="bg-white rounded-2xl overflow-hidden">
-                <div class="p-6 flex space-x-6 underline align-center">
-                    <p class="leading-relaxed my-3 ml-2">Lorem ipsum<br>dolor sit amet</p>
-                    <div class="flex items-center flex-wrap">
-                            <img class="w-6 h-6 ml-6 mr-6" src="/img/calendar.svg">
-                            </img>
-                    </div>
-                </div>
             </div>
+          </div>
         </div>
         <div class="p-6 sm:w-1/2 lg:w-1/4">
           <div class="bg-white rounded-2xl overflow-hidden">
-              <div class="p-6 flex space-x-6 underline align-center">
-                  <p class="leading-relaxed my-3 ml-2">Lorem ipsum<br>dolor sit amet</p>
-                  <div class="flex items-center flex-wrap">
-                          <img class="w-6 h-6 ml-6 mr-6" src="/img/calendar.svg">
-                          </img>
-                  </div>
+            <div class="p-6 flex space-x-6 underline align-center">
+              <p class="leading-relaxed my-3 ml-2">Lorem ipsum<br>dolor sit amet</p>
+              <div class="flex items-center flex-wrap">
+                <img class="w-6 h-6 ml-6 mr-6" src="/img/calendar.svg">
+                </img>
               </div>
+            </div>
           </div>
-      </div>
+        </div>
+        <div class="p-6 sm:w-1/2 lg:w-1/4">
+          <div class="bg-white rounded-2xl overflow-hidden">
+            <div class="p-6 flex space-x-6 underline align-center">
+              <p class="leading-relaxed my-3 ml-2">Lorem ipsum<br>dolor sit amet</p>
+              <div class="flex items-center flex-wrap">
+                <img class="w-6 h-6 ml-6 mr-6" src="/img/calendar.svg">
+                </img>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="p-6 sm:w-1/2 lg:w-1/4">
+          <div class="bg-white rounded-2xl overflow-hidden">
+            <div class="p-6 flex space-x-6 underline align-center">
+              <p class="leading-relaxed my-3 ml-2">Lorem ipsum<br>dolor sit amet</p>
+              <div class="flex items-center flex-wrap">
+                <img class="w-6 h-6 ml-6 mr-6" src="/img/calendar.svg">
+                </img>
+              </div>
+            </div>
+          </div>
+        </div>
       </div>
     </div>
   </section>
-
   <div class="py-6 px-4 mt-10 w-full mx-auto ">
     <div class="flex space-x-2 justify-center">
       <h5 class="mb-2 text-3xl font-bold tracking-tight text-[#2B2B2B] dark:text-white">Como podemos te ajudar?</h5>
       <div class="space-y-6 flex items-center">
         <div class="h-2 w-80 bg-[#D0AC6B] bg-opacity-80 rounded"></div>
-     </div>
+      </div>
     </div>
   </div>
 
-<div id="default-carousel bg-white " class="relative w-full" data-carousel="slide">
-  <!-- Carousel wrapper -->
-  <div class="relative h-56 rounded-lg md:h-96 my-2">
-       <!-- Item 1 -->
-      <div class="hidden duration-700 ease-in-out" data-carousel-item>    
-<div class="max-w-sm bg-[#A68955] bg-opacity-10 border border-gray-200 rounded-lg shadow dark:bg-gray-800 dark:border-gray-700">
-  <a href="#">
-      <img class="rounded-t-lg mt-2" src="/img/Croods Keeping in Touch.svg" alt="" />
-  </a>
-  <div class="p-5">
-      <a href="#">
-          <h5 class="mb-2 text-2xl font-bold tracking-tight text-gray-900 dark:text-white">Noteworthy technology.</h5>
-      </a>
-      <p class="mb-3 font-normal text-gray-700 dark:text-gray-400">Here are the biggest enterprise technology acquisitions of 2021 so far.</p>
-      <a href="#" class="inline-flex items-center px-3 py-2 text-sm font-medium text-center text-white bg-[#2B2B2B] rounded-lg hover:bg-[#D0AC6B] focus:ring-4 focus:outline-none focus:ring-[#D0AC6B] dark:bg-[#D0AC6B] dark:hover:bg-[#D0AC6B] dark:focus:ring-[#D0AC6B]">
-          Saiba mais
-          <svg aria-hidden="true" class="w-4 h-4 ml-2 -mr-1" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M10.293 3.293a1 1 0 011.414 0l6 6a1 1 0 010 1.414l-6 6a1 1 0 01-1.414-1.414L14.586 11H3a1 1 0 110-2h11.586l-4.293-4.293a1 1 0 010-1.414z" clip-rule="evenodd"></path></svg>
-      </a>
-  </div>
-</div>
+  <div id="default-carousel bg-white " class="relative w-full" data-carousel="slide">
+    <!-- Carousel wrapper -->
+    <div class="relative h-56 rounded-lg md:h-96 overflow-hidden mx-[477px] my-6">
+      <!-- Item 1 -->
+      <div class="hidden duration-700 ease-in-out overflow-hidden" data-carousel-item>
+        <div
+          class="max-w-sm bg-[#A68955] bg-opacity-10 border border-gray-200 rounded-lg shadow dark:bg-gray-800 dark:border-gray-700">
+          <a href="#">
+            <img class="rounded-t-lg mt-3 pl-6" src="/img/Croods Keeping in Touch.svg" alt="" />
+          </a>
+          <div class="p-5">
+            <a href="#">
+              <h5 class="mb-2 text-2xl font-bold tracking-tight text-gray-900 dark:text-white">Noteworthy technology
+              </h5>
+            </a>
+            <p class="mb-3 font-normal text-gray-700 dark:text-gray-400">Here are the biggest enterprise technology
+              acquisitions of 2021 so far.</p>
+            <a href="#"
+              class="inline-flex items-center px-3 py-2 text-sm font-medium text-center text-white bg-[#2B2B2B] rounded-lg hover:bg-[#D0AC6B] focus:ring-4 focus:outline-none focus:ring-[#D0AC6B] dark:bg-[#D0AC6B] dark:hover:bg-[#D0AC6B] dark:focus:ring-[#D0AC6B]">
+              Saiba mais
+              <svg aria-hidden="true" class="w-4 h-4 ml-2 -mr-1" fill="currentColor" viewBox="0 0 20 20"
+                xmlns="http://www.w3.org/2000/svg">
+                <path fill-rule="evenodd"
+                  d="M10.293 3.293a1 1 0 011.414 0l6 6a1 1 0 010 1.414l-6 6a1 1 0 01-1.414-1.414L14.586 11H3a1 1 0 110-2h11.586l-4.293-4.293a1 1 0 010-1.414z"
+                  clip-rule="evenodd"></path>
+              </svg>
+            </a>
+          </div>
+        </div>
       </div>
       <!-- Item 2 -->
-      <div class="hidden duration-700 ease-in-out" data-carousel-item>
-          
-<div class="max-w-sm bg-[#A68955] bg-opacity-10 border border-gray-200 rounded-lg shadow dark:bg-gray-800 dark:border-gray-700">
-  <a href="#">
-      <img class="rounded-t-lg mt-2" src="/img/Croods Keeping in Touch.svg" alt="" />
-  </a>
-  <div class="p-5">
-      <a href="#">
-          <h5 class="mb-2 text-2xl font-bold tracking-tight text-gray-900 dark:text-white">Noteworthy technology</h5>
-      </a>
-      <p class="mb-3 font-normal text-gray-700 dark:text-gray-400">Here are the biggest enterprise technology acquisitions of 2021 so far.</p>
-      <a href="#" class="inline-flex items-center px-3 py-2 text-sm font-medium text-center text-white bg-[#2B2B2B] rounded-lg hover:bg-[#D0AC6B] focus:ring-4 focus:outline-none focus:ring-[#D0AC6B] dark:bg-[#D0AC6B] dark:hover:bg-[#D0AC6B] dark:focus:ring-[#D0AC6B]">
-          Saiba mais
-          <svg aria-hidden="true" class="w-4 h-4 ml-2 -mr-1" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M10.293 3.293a1 1 0 011.414 0l6 6a1 1 0 010 1.414l-6 6a1 1 0 01-1.414-1.414L14.586 11H3a1 1 0 110-2h11.586l-4.293-4.293a1 1 0 010-1.414z" clip-rule="evenodd"></path></svg>
-      </a>
-  </div>
-</div>
+      <div class="hidden duration-700 ease-in-out overflow-hidden" data-carousel-item>
+
+        <div
+          class="max-w-sm bg-[#A68955] bg-opacity-10 border border-gray-200 rounded-lg shadow dark:bg-gray-800 dark:border-gray-700">
+          <a href="#">
+            <img class="rounded-t-lg mt-3 pl-6" src="/img/Croods Keeping in Touch.svg" alt="" />
+          </a>
+          <div class="p-5">
+            <a href="#">
+              <h5 class="mb-2 text-2xl font-bold tracking-tight text-gray-900 dark:text-white">Noteworthy technology
+              </h5>
+            </a>
+            <p class="mb-3 font-normal text-gray-700 dark:text-gray-400">Here are the biggest enterprise technology
+              acquisitions of 2021 so far.</p>
+            <a href="#"
+              class="inline-flex items-center px-3 py-2 text-sm font-medium text-center text-white bg-[#2B2B2B] rounded-lg hover:bg-[#D0AC6B] focus:ring-4 focus:outline-none focus:ring-[#D0AC6B] dark:bg-[#D0AC6B] dark:hover:bg-[#D0AC6B] dark:focus:ring-[#D0AC6B]">
+              Saiba mais
+              <svg aria-hidden="true" class="w-4 h-4 ml-2 -mr-1" fill="currentColor" viewBox="0 0 20 20"
+                xmlns="http://www.w3.org/2000/svg">
+                <path fill-rule="evenodd"
+                  d="M10.293 3.293a1 1 0 011.414 0l6 6a1 1 0 010 1.414l-6 6a1 1 0 01-1.414-1.414L14.586 11H3a1 1 0 110-2h11.586l-4.293-4.293a1 1 0 010-1.414z"
+                  clip-rule="evenodd"></path>
+              </svg>
+            </a>
+          </div>
+        </div>
 
       </div>
       <!-- Item 3 -->
-      <div class="hidden duration-700 ease-in-out" data-carousel-item>
-          
-<div class="max-w-sm bg-[#A68955] bg-opacity-10 border border-gray-200 rounded-lg shadow dark:bg-gray-800 dark:border-gray-700">
-  <a href="#">
-      <img class="rounded-t-lg mt-2" src="/img/Croods Keeping in Touch.svg" alt="" />
-  </a>
-  <div class="p-5">
-      <a href="#">
-          <h5 class="mb-2 text-2xl font-bold tracking-tight text-gray-900 dark:text-white">Noteworthy technology acquisitions 2021</h5>
-      </a>
-      <p class="mb-3 font-normal text-gray-700 dark:text-gray-400">Here are the biggest enterprise technology acquisitions of 2021 so far.</p>
-      <a href="#" class="inline-flex items-center px-3 py-2 text-sm font-medium text-center text-white bg-[#2B2B2B] rounded-lg hover:bg-[#D0AC6B] focus:ring-4 focus:outline-none focus:ring-[#D0AC6B] dark:bg-[#D0AC6B] dark:hover:bg-[#D0AC6B] dark:focus:ring-[#D0AC6B]">
-        Saiba mais
-          <svg aria-hidden="true" class="w-4 h-4 ml-2 -mr-1" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M10.293 3.293a1 1 0 011.414 0l6 6a1 1 0 010 1.414l-6 6a1 1 0 01-1.414-1.414L14.586 11H3a1 1 0 110-2h11.586l-4.293-4.293a1 1 0 010-1.414z" clip-rule="evenodd"></path></svg>
-      </a>
-  </div>
-</div>
+      <div class="hidden duration-700 ease-in-out overflow-hidden" data-carousel-item>
+
+        <div
+          class="max-w-sm bg-[#A68955] bg-opacity-10 border border-gray-200 rounded-lg shadow dark:bg-gray-800 dark:border-gray-700">
+          <a href="#">
+            <img class="rounded-t-lg mt-3 pl-6" src="/img/Croods Keeping in Touch.svg" alt="" />
+          </a>
+          <div class="p-5">
+            <a href="#">
+              <h5 class="mb-2 text-2xl font-bold tracking-tight text-gray-900 dark:text-white">Noteworthy technology
+              </h5>
+            </a>
+            <p class="mb-3 font-normal text-gray-700 dark:text-gray-400">Here are the biggest enterprise technology
+              acquisitions of 2021 so far.</p>
+            <a href="#"
+              class="inline-flex items-center px-3 py-2 text-sm font-medium text-center text-white bg-[#2B2B2B] rounded-lg hover:bg-[#D0AC6B] focus:ring-4 focus:outline-none focus:ring-[#D0AC6B] dark:bg-[#D0AC6B] dark:hover:bg-[#D0AC6B] dark:focus:ring-[#D0AC6B]">
+              Saiba mais
+              <svg aria-hidden="true" class="w-4 h-4 ml-2 -mr-1" fill="currentColor" viewBox="0 0 20 20"
+                xmlns="http://www.w3.org/2000/svg">
+                <path fill-rule="evenodd"
+                  d="M10.293 3.293a1 1 0 011.414 0l6 6a1 1 0 010 1.414l-6 6a1 1 0 01-1.414-1.414L14.586 11H3a1 1 0 110-2h11.586l-4.293-4.293a1 1 0 010-1.414z"
+                  clip-rule="evenodd"></path>
+              </svg>
+            </a>
+          </div>
+        </div>
 
       </div>
       <!-- Item 4 -->
-      <div class="hidden duration-700 ease-in-out" data-carousel-item>
-          
-<div class="max-w-sm bg-[#A68955] bg-opacity-10 border border-gray-200 rounded-lg shadow dark:bg-gray-800 dark:border-gray-700">
-  <a href="#">
-      <img class="rounded-t-lg mt-2" src="/img/Croods Keeping in Touch.svg" alt="" />
-  </a>
-  <div class="p-5">
-      <a href="#">
-          <h5 class="mb-2 text-2xl font-bold tracking-tight text-gray-900 dark:text-white">Noteworthy technology acquisitions 2021</h5>
-      </a>
-      <p class="mb-3 font-normal text-gray-700 dark:text-gray-400">Here are the biggest enterprise technology acquisitions of 2021 so far.</p>
-      <a href="#" class="inline-flex items-center px-3 py-2 text-sm font-medium text-center text-white bg-[#2B2B2B] rounded-lg hover:bg-[#D0AC6B] focus:ring-4 focus:outline-none focus:ring-[#D0AC6B] dark:bg-[#D0AC6B] dark:hover:bg-[#D0AC6B] dark:focus:ring-[#D0AC6B]">
-        Saiba mais
-          <svg aria-hidden="true" class="w-4 h-4 ml-2 -mr-1" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M10.293 3.293a1 1 0 011.414 0l6 6a1 1 0 010 1.414l-6 6a1 1 0 01-1.414-1.414L14.586 11H3a1 1 0 110-2h11.586l-4.293-4.293a1 1 0 010-1.414z" clip-rule="evenodd"></path></svg>
-      </a>
-  </div>
-</div>
+      <div class="hidden duration-700 ease-in-out overflow-hidden" data-carousel-item>
+
+        <div
+          class="max-w-sm bg-[#A68955] bg-opacity-10 border border-gray-200 rounded-lg shadow dark:bg-gray-800 dark:border-gray-700">
+          <a href="#">
+            <img class="rounded-t-lg mt-3 pl-6" src="/img/Croods Keeping in Touch.svg" alt="" />
+          </a>
+          <div class="p-5">
+            <a href="#">
+              <h5 class="mb-2 text-2xl font-bold tracking-tight text-gray-900 dark:text-white">Noteworthy technology
+              </h5>
+            </a>
+            <p class="mb-3 font-normal text-gray-700 dark:text-gray-400">Here are the biggest enterprise technology
+              acquisitions of 2021 so far.</p>
+            <a href="#"
+              class="inline-flex items-center px-3 py-2 text-sm font-medium text-center text-white bg-[#2B2B2B] rounded-lg hover:bg-[#D0AC6B] focus:ring-4 focus:outline-none focus:ring-[#D0AC6B] dark:bg-[#D0AC6B] dark:hover:bg-[#D0AC6B] dark:focus:ring-[#D0AC6B]">
+              Saiba mais
+              <svg aria-hidden="true" class="w-4 h-4 ml-2 -mr-1" fill="currentColor" viewBox="0 0 20 20"
+                xmlns="http://www.w3.org/2000/svg">
+                <path fill-rule="evenodd"
+                  d="M10.293 3.293a1 1 0 011.414 0l6 6a1 1 0 010 1.414l-6 6a1 1 0 01-1.414-1.414L14.586 11H3a1 1 0 110-2h11.586l-4.293-4.293a1 1 0 010-1.414z"
+                  clip-rule="evenodd"></path>
+              </svg>
+            </a>
+          </div>
+        </div>
 
       </div>
       <!-- Item 5 -->
-      <div class="hidden duration-700 ease-in-out" data-carousel-item>
-          
-<div class="max-w-sm bg-[#A68955] bg-opacity-10 border border-gray-200 rounded-lg shadow dark:bg-gray-800 dark:border-gray-700">
-  <a href="#">
-      <img class="rounded-t-lg mt-2" src="/img/Croods Keeping in Touch.svg" alt="" />
-  </a>
-  <div class="p-5">
-      <a href="#">
-          <h5 class="mb-2 text-2xl font-bold tracking-tight text-gray-900 dark:text-white">Noteworthy technology acquisitions 2021</h5>
-      </a>
-      <p class="mb-3 font-normal text-gray-700 dark:text-gray-400">Here are the biggest enterprise technology acquisitions of 2021 so far.</p>
-      <a href="#" class="inline-flex items-center px-3 py-2 text-sm font-medium text-center text-white bg-[#2B2B2B] rounded-lg hover:bg-[#D0AC6B] focus:ring-4 focus:outline-none focus:ring-[#D0AC6B] dark:bg-[#D0AC6B] dark:hover:bg-[#D0AC6B] dark:focus:ring-[#D0AC6B]">
-          Saiba mais
-          <svg aria-hidden="true" class="w-4 h-4 ml-2 -mr-1" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M10.293 3.293a1 1 0 011.414 0l6 6a1 1 0 010 1.414l-6 6a1 1 0 01-1.414-1.414L14.586 11H3a1 1 0 110-2h11.586l-4.293-4.293a1 1 0 010-1.414z" clip-rule="evenodd"></path></svg>
-      </a>
-  </div>
-</div>
+      <div class="hidden duration-700 ease-in-out overflow-hidden" data-carousel-item>
+
+        <div
+          class="max-w-sm bg-[#A68955] bg-opacity-10 border border-gray-200 rounded-lg shadow dark:bg-gray-800 dark:border-gray-700">
+          <a href="#">
+            <img class="rounded-t-lg mt-3 pl-6" src="/img/Croods Keeping in Touch.svg" alt="" />
+          </a>
+          <div class="p-5">
+            <a href="#">
+              <h5 class="mb-2 text-2xl font-bold tracking-tight text-gray-900 dark:text-white">Noteworthy technology
+              </h5>
+            </a>
+            <p class="mb-3 font-normal text-gray-700 dark:text-gray-400">Here are the biggest enterprise technology
+              acquisitions of 2021 so far.</p>
+            <a href="#"
+              class="inline-flex items-center px-3 py-2 text-sm font-medium text-center text-white bg-[#2B2B2B] rounded-lg hover:bg-[#D0AC6B] focus:ring-4 focus:outline-none focus:ring-[#D0AC6B] dark:bg-[#D0AC6B] dark:hover:bg-[#D0AC6B] dark:focus:ring-[#D0AC6B]">
+              Saiba mais
+              <svg aria-hidden="true" class="w-4 h-4 ml-2 -mr-1" fill="currentColor" viewBox="0 0 20 20"
+                xmlns="http://www.w3.org/2000/svg">
+                <path fill-rule="evenodd"
+                  d="M10.293 3.293a1 1 0 011.414 0l6 6a1 1 0 010 1.414l-6 6a1 1 0 01-1.414-1.414L14.586 11H3a1 1 0 110-2h11.586l-4.293-4.293a1 1 0 010-1.414z"
+                  clip-rule="evenodd"></path>
+              </svg>
+            </a>
+          </div>
+        </div>
 
       </div>
-  </div>
-  <!-- Slider indicators -->
-  <div class="absolute z-30 flex space-x-3 -translate-x-1/2 bottom-5 left-1/2">
-      <button type="button" class="w-3 h-3 rounded-full" aria-current="true" aria-label="Slide 1" data-carousel-slide-to="0"></button>
-      <button type="button" class="w-3 h-3 rounded-full" aria-current="false" aria-label="Slide 2" data-carousel-slide-to="1"></button>
-      <button type="button" class="w-3 h-3 rounded-full" aria-current="false" aria-label="Slide 3" data-carousel-slide-to="2"></button>
-      <button type="button" class="w-3 h-3 rounded-full" aria-current="false" aria-label="Slide 4" data-carousel-slide-to="3"></button>
-      <button type="button" class="w-3 h-3 rounded-full" aria-current="false" aria-label="Slide 5" data-carousel-slide-to="4"></button>
-  </div>
-  <!-- Slider controls -->
-  <button type="button" class="absolute top-0 left-1/4 z-30 space-x-3 -translate-x-1/2 flex items-center justify-center h-96 px-4 cursor-pointer group focus:outline-none" data-carousel-prev>
-      <span class="inline-flex items-center justify-center w-8 h-8 rounded-full sm:w-10 sm:h-10 bg-[#2B2B2B] dark:bg-gray-800/30 group-hover:bg-[#2B2B2B] dark:group-hover:bg-gray-800/60 group-focus:ring-4 group-focus:ring-white dark:group-focus:ring-gray-800/70 group-focus:outline-none">
-          <svg aria-hidden="true" class="w-5 h-5 text-white sm:w-6 sm:h-6 dark:text-gray-800" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 19l-7-7 7-7"></path></svg>
-          <span class="sr-only">Previous</span>
+    </div>
+    <!-- Slider controls -->
+    <button type="button"
+      class="absolute top-0 left-1/4 z-30 space-x-3 -translate-x-1/2 flex items-center justify-center h-96 pl-20 cursor-pointer group focus:outline-none"
+      data-carousel-prev>
+      <span
+        class="inline-flex items-center justify-center w-8 h-8 rounded-full sm:w-10 sm:h-10 bg-[#2B2B2B] dark:bg-gray-800/30 group-hover:bg-[#2B2B2B] dark:group-hover:bg-gray-800/60 group-focus:ring-4 group-focus:ring-white dark:group-focus:ring-gray-800/70 group-focus:outline-none">
+        <svg aria-hidden="true" class="w-5 h-5 text-white sm:w-6 sm:h-6 dark:text-gray-800" fill="none"
+          stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 19l-7-7 7-7"></path>
+        </svg>
+        <span class="sr-only">Previous</span>
       </span>
-  </button>
-  <button type="button" class="absolute top-0 right-1/4 z-30 flex items-center justify-center h-96 px-4 cursor-pointer group focus:outline-none" data-carousel-next>
-      <span class="inline-flex items-center justify-center w-8 h-8 rounded-full sm:w-10 sm:h-10 bg-[#2B2B2B] dark:bg-gray-800/30 group-hover:bg-[#2B2B2B] dark:group-hover:bg-gray-800/60 group-focus:ring-4 group-focus:ring-white dark:group-focus:ring-gray-800/70 group-focus:outline-none">
-          <svg aria-hidden="true" class="w-5 h-5 text-white sm:w-6 sm:h-6 dark:text-gray-800" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"></path></svg>
-          <span class="sr-only">Next</span>
+    </button>
+    <button type="button"
+      class="absolute top-0 right-1/4 z-30 flex items-center justify-center h-96 px-4 cursor-pointer group focus:outline-none"
+      data-carousel-next>
+      <span
+        class="inline-flex items-center justify-center w-8 h-8 rounded-full sm:w-10 sm:h-10 bg-[#2B2B2B] dark:bg-gray-800/30 group-hover:bg-[#2B2B2B] dark:group-hover:bg-gray-800/60 group-focus:ring-4 group-focus:ring-white dark:group-focus:ring-gray-800/70 group-focus:outline-none">
+        <svg aria-hidden="true" class="w-5 h-5 text-white sm:w-6 sm:h-6 dark:text-gray-800" fill="none"
+          stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"></path>
+        </svg>
+        <span class="sr-only">Next</span>
       </span>
-  </button>
-</div>
-<!--Passo a passo-->
- <div>
-   <h5 class="mb-2 text-3xl text-center font-bold tracking-tight text-[#2B2B2B] dark:text-white pt-6">Passos para conquistar o seu direito:</h5>
-   <div>
-    <div class="p-4 mt-4 w-full mx-auto">
-     <div class="flex justify-center">
-       <div class="h-1 w-3/5 bg-[#D0AC6B] bg-opacity-80 rounded"></div>
-     </div>
-   </div>
-   </div>
-    <div class="flex max-w-5x1 mx-auto gap-8 group flex justify-center w-3/5 my-4">
-      <div class="bg-[#2B2B2B] duration-500 group-hover:blur-sm hover:!blur-none group-hover:scale-[0.85] hover:!scale-100 cursor-pointer p-8 rounded-2xl">
+    </button>
+  </div>
+  <!--Passo a passo-->
+  <div>
+    <h5 class="mb-2 text-3xl text-center font-bold tracking-tight text-[#2B2B2B] dark:text-white pt-6">Passos para
+      conquistar o seu direito:</h5>
+    <div>
+      <div class="p-4 mt-4 w-full mx-auto">
+        <div class="flex justify-center">
+          <div class="h-1 w-3/5 bg-[#D0AC6B] bg-opacity-80 rounded"></div>
+        </div>
+      </div>
+    </div>
+    <div class="flex max-w-5x1 mx-auto gap-8 group justify-center w-3/5 my-4">
+      <div
+        class="bg-[#2B2B2B] duration-500 group-hover:blur-sm hover:!blur-none group-hover:scale-[0.85] hover:!scale-100 cursor-pointer p-8 rounded-2xl">
         <img class="stroke-[#D0AC6B] h-10 mx-auto pb-2" src="/img/message-square.svg" alt="">
         <p class="uppercase text-sm text-[#D0AC6B] font-bold text-center">Lorem ipsum</p>
         <p class="text-sm text-justify ledading-7 my-3 text-[#D0AC6B]">
-          Lorem ipsum dolor sit amet, 
+          Lorem ipsum dolor sit amet,
           consectetur adipiscing elit.
-          Curabitur luctus pulvinar 
-          sapien vel imperdiet. 
-          Etiam ut aliquam lectus, 
+          Curabitur luctus pulvinar
+          sapien vel imperdiet.
+          Etiam ut aliquam lectus,
           ut convallis urna.
         </p>
       </div>
-      <div class="bg-[#2B2B2B] duration-500 group-hover:blur-sm hover:!blur-none  group-hover:scale-[0.85] hover:!scale-100  cursor-pointer p-8 rounded-2xl">
+      <div
+        class="bg-[#2B2B2B] duration-500 group-hover:blur-sm hover:!blur-none  group-hover:scale-[0.85] hover:!scale-100  cursor-pointer p-8 rounded-2xl">
         <img src="/img/search.svg" alt="" class="h-10 mx-auto pb-2">
         <p class="uppercase text-sm text-[#D0AC6B] font-bold text-center">Lorem ipsum</p>
         <p class="text-sm text-justify ledading-7 my-3 text-[#D0AC6B]">
-          Lorem ipsum dolor sit amet, 
+          Lorem ipsum dolor sit amet,
           consectetur adipiscing elit.
-          Curabitur luctus pulvinar 
-          sapien vel imperdiet. 
-          Etiam ut aliquam lectus, 
+          Curabitur luctus pulvinar
+          sapien vel imperdiet.
+          Etiam ut aliquam lectus,
           ut convallis urna.
         </p>
       </div>
-      <div class="bg-[#2B2B2B] duration-500 group-hover:blur-sm hover:!blur-none group-hover:scale-[0.85] hover:!scale-100 cursor-pointer p-8 rounded-2xl">
+      <div
+        class="bg-[#2B2B2B] duration-500 group-hover:blur-sm hover:!blur-none group-hover:scale-[0.85] hover:!scale-100 cursor-pointer p-8 rounded-2xl">
         <img src="/img/check.svg" alt="" class="h-10 mx-auto pb-2">
         <p class="uppercase text-sm text-[#D0AC6B] font-bold text-center">Lorem ipsum</p>
         <p class="text-sm text-justify ledading-7 my-3 text-[#D0AC6B]">
-          Lorem ipsum dolor sit amet, 
+          Lorem ipsum dolor sit amet,
           consectetur adipiscing elit.
-          Curabitur luctus pulvinar 
-          sapien vel imperdiet. 
-          Etiam ut aliquam lectus, 
+          Curabitur luctus pulvinar
+          sapien vel imperdiet.
+          Etiam ut aliquam lectus,
           ut convallis urna.
         </p>
       </div>
-   </div>
-   <div>
-    <div class="p-4 w-full mx-auto">
-     <div class="flex justify-center">
-       <div class="h-1 w-3/5 bg-[#D0AC6B] bg-opacity-80 rounded"></div>
-     </div>
-   </div>
-   </div>
-   </div>
-    <!--Sobre-->
-    <div class="md:h-3/4 flex items-center justify-center my-20 p-6" style="background-image: url('/img/Grid.svg')">
-    <a href="#" class="flex flex-col items-center bg-[#D0AC6B] bg-opacity-80 border border-gray-200 rounded-3xl shadow md:flex-row md:w-1/2">
-     <img class="object-cover w-full rounded-l-3xl h-full md:h-96 md:w-64 md:rounded-l-3xl" src="/img/um-grupo-de-pessoas-multinacionais-ocupadas-trabalhando-no-escritorio.jpg" alt="">
+    </div>
+    <div>
+      <div class="p-4 w-full mx-auto">
+        <div class="flex justify-center">
+          <div class="h-1 w-3/5 bg-[#D0AC6B] bg-opacity-80 rounded"></div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!--Sobre-->
+  <div class="md:h-3/4 flex items-center justify-center my-20 p-6"
+    style="background-image: url('/img/Quem\ somos.svg')">
+    <a href="#"
+      class="flex flex-col items-center bg-[#D0AC6B] bg-opacity-80 border border-gray-200 rounded-3xl shadow md:flex-row md:w-1/2">
+      <img
+        class="object-cover w-full rounded-l-3xl h-full md:h-96 md:w-64 md:rounded-l-3xl md:rounded-r-none sm:rounded-l-none sm:rounded-t-3xl sm:rounded-tl-3xl"
+        src="/img/um-grupo-de-pessoas-multinacionais-ocupadas-trabalhando-no-escritorio.jpg" alt="">
       <div class="flex flex-col justify-between p-4 leading-normal">
-       <h5 class="mb-2 text-2xl font-bold tracking-tight text-[#2B2B2B] dark:text-white">Sobre o escritório</h5>
-       <p class="mb-3 font-normal text-gray-700 dark:text-[#2B2B2B]">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur luctus pulvinar sapien vel imperdiet. Etiam ut aliquam lectus, ut convallis urna. Aliquam luctus condimentum elit sed accumsan
-        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur luctus pulvinar sapien vel imperdiet. Etiam ut aliquam lectus, ut convallis urna. Aliquam luctus condimentum elit sed accumsan
-        Etiam ut aliquam lectus, ut convallis urna. Aliquam luctus condimentum elit sed accumsan</p>
-     </div>
-   </a>
-   </div>
-   <!--Nossa equipe-->
-   <div class="md:h-3/4 md:w-96 flex items-center justify-center my-20 p-6 bg-gray-900 bg-opacity-50 rounded-r-[200px]">
-   </div>
+        <h5 class="mb-2 text-2xl font-bold tracking-tight text-[#2B2B2B] dark:text-white">Sobre o escritório</h5>
+        <p class="mb-3 font-normal text-gray-700 dark:text-[#2B2B2B]">Lorem ipsum dolor sit amet, consectetur adipiscing
+          elit. Curabitur luctus pulvinar sapien vel imperdiet. Etiam ut aliquam lectus, ut convallis urna. Aliquam
+          luctus condimentum elit sed accumsan
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur luctus pulvinar sapien vel imperdiet. Etiam
+          ut aliquam lectus, ut convallis urna. Aliquam luctus condimentum elit sed accumsan
+          Etiam ut aliquam lectus, ut convallis urna. Aliquam luctus condimentum elit sed accumsan</p>
+      </div>
+    </a>
+  </div>
 
-   <script src="https://cdnjs.cloudflare.com/ajax/libs/flowbite/1.6.5/flowbite.min.js"></script>
- </body>
+  <div class="md:h-3/4 md:w-full my-20 p-6 bg-[#2B2B2B] bg-opacity-50 rounded-r-[200px] z-0">
+    <div class="py-6 w-full mx-auto z-40">
+      <div class="flex justify-center">
+        <h5 class="mb-2 pr-2 text-3xl font-bold tracking-tight text-[#2B2B2B] dark:text-white">Nossa equipe</h5>
+      </div>
+    </div>
+
+
+    <!--Nossa equipe-->
+    <div id="default-carousel bg-white z-30" class="relative w-full" data-carousel="static">
+      <!-- Carousel wrapper -->
+      <div class="relative h-56 rounded-lg md:h-96 overflow-hidden mx-[500px] mt-2 mb-10 z-30">
+        <!-- Item 1 -->
+        <div class="hidden duration-700 ease-in-out overflow-hidden" data-carousel-item>
+          <div class="max-w-sm bg-white border rounded-lg shadow dark:bg-gray-800 dark:border-gray-700">
+            <a href="#">
+              <img class="object-cover rounded-t-lg h-full w-full brightness-50 hover:brightness-100"
+                src="/img/unsplash_8YG31Xn4dSw (1).svg" alt="" />
+            </a>
+            <div class="p-2">
+              <a href="#">
+                <h5 class="text-center mb-2 text-2xl font-bold tracking-tight text-gray-900 dark:text-white">Noteworthy
+                  technology
+                </h5>
+              </a>
+              <p class="text-center mb-3 font-normal text-gray-700 dark:text-gray-400">Here are the biggest enterprise
+                technology
+              </p>
+            </div>
+          </div>
+        </div>
+        <!-- Item 2 -->
+        <div class="hidden duration-700 ease-in-out overflow-hidden" data-carousel-item>
+          <div class="max-w-sm bg-white border rounded-lg shadow dark:bg-gray-800 dark:border-gray-700">
+            <a href="#">
+              <img class="object-cover rounded-t-lg h-full w-full brightness-50 hover:brightness-100"
+                src="/img/unsplash_8YG31Xn4dSw (1).svg" alt="" />
+            </a>
+            <div class="p-2">
+              <a href="#">
+                <h5 class="text-center mb-2 text-2xl font-bold tracking-tight text-gray-900 dark:text-white">Noteworthy
+                  technology
+                </h5>
+              </a>
+              <p class="text-center mb-3 font-normal text-gray-700 dark:text-gray-400">Here are the biggest enterprise
+                technology
+              </p>
+            </div>
+          </div>
+        </div>
+        <!-- Item 3 -->
+        <div class="hidden duration-700 ease-in-out overflow-hidden" data-carousel-item>
+          <div class="max-w-sm bg-white border rounded-lg shadow dark:bg-gray-800 dark:border-gray-700">
+            <a href="#">
+              <img class="object-cover rounded-t-lg h-full w-full brightness-50 hover:brightness-100"
+                src="/img/unsplash_8YG31Xn4dSw (1).svg" alt="" />
+            </a>
+            <div class="p-2">
+              <a href="#">
+                <h5 class="text-center mb-2 text-2xl font-bold tracking-tight text-gray-900 dark:text-white">Noteworthy
+                  technology
+                </h5>
+              </a>
+              <p class="text-center mb-3 font-normal text-gray-700 dark:text-gray-400">Here are the biggest enterprise
+                technology
+              </p>
+            </div>
+          </div>
+        </div>
+        <!-- Item 4 -->
+        <div class="hidden duration-700 ease-in-out overflow-hidden" data-carousel-item>
+          <div class="max-w-sm bg-white border rounded-lg shadow dark:bg-gray-800 dark:border-gray-700">
+            <a href="#">
+              <img class="object-cover rounded-t-lg h-full w-full brightness-50 hover:brightness-100"
+                src="/img/unsplash_8YG31Xn4dSw (1).svg" alt="" />
+            </a>
+            <div class="p-2">
+              <a href="#">
+                <h5 class="text-center mb-2 text-2xl font-bold tracking-tight text-gray-900 dark:text-white">Noteworthy
+                  technology
+                </h5>
+              </a>
+              <p class="text-center mb-3 font-normal text-gray-700 dark:text-gray-400">Here are the biggest enterprise
+                technology
+              </p>
+            </div>
+          </div>
+        </div>
+        <!-- Item 5 -->
+        <div class="hidden duration-700 ease-in-out overflow-hidden" data-carousel-item>
+          <div class="max-w-sm bg-white border rounded-lg shadow dark:bg-gray-800 dark:border-gray-700">
+            <a href="#">
+              <img class="object-cover rounded-t-lg h-full w-full brightness-50 hover:brightness-100"
+                src="/img/unsplash_8YG31Xn4dSw (1).svg" alt="" />
+            </a>
+            <div class="p-2">
+              <a href="#">
+                <h5 class="text-center mb-2 text-2xl font-bold tracking-tight text-gray-900 dark:text-white">Noteworthy
+                  technology
+                </h5>
+              </a>
+              <p class="text-center mb-3 font-normal text-gray-700 dark:text-gray-400">Here are the biggest enterprise
+                technology
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- Slider indicators -->
+      <div class="absolute z-30 flex space-x-3 -translate-x-1/2 -bottom-8 left-1/2">
+        <button type="button" class="w-3 h-3 rounded-full" aria-current="true" aria-label="Slide 1"
+          data-carousel-slide-to="0"></button>
+        <button type="button" class="w-3 h-3 rounded-full" aria-current="false" aria-label="Slide 2"
+          data-carousel-slide-to="1"></button>
+        <button type="button" class="w-3 h-3 rounded-full" aria-current="false" aria-label="Slide 3"
+          data-carousel-slide-to="2"></button>
+        <button type="button" class="w-3 h-3 rounded-full" aria-current="false" aria-label="Slide 4"
+          data-carousel-slide-to="3"></button>
+        <button type="button" class="w-3 h-3 rounded-full" aria-current="false" aria-label="Slide 5"
+          data-carousel-slide-to="4"></button>
+      </div>
+      <!-- Slider controls -->
+      <button type="button"
+        class="absolute top-0 left-1/4 z-30 space-x-3 -translate-x-1/2 flex items-center justify-center h-96 pl-48 cursor-pointer group focus:outline-none"
+        data-carousel-prev>
+        <span class="inline-flex items-center justify-center w-8 h-8 rounded-full sm:w-10 sm:h-10">
+          <svg aria-hidden="true" class="w-5 h-5 text-[#2B2B2B] sm:w-6 sm:h-6 dark:text-gray-800" fill="none"
+            stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 19l-7-7 7-7"></path>
+          </svg>
+          <span class="sr-only">Previous</span>
+        </span>
+      </button>
+      <button type="button"
+        class="absolute top-0 right-1/4 z-30 flex items-center justify-center h-96 pr-16 cursor-pointer group focus:outline-none"
+        data-carousel-next>
+        <span class="inline-flex items-center justify-center w-8 h-8 rounded-full sm:w-10 sm:h-10">
+          <svg aria-hidden="true" class="w-5 h-5 text-[#2B2B2B] sm:w-6 sm:h-6 dark:text-gray-800" fill="none"
+            stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"></path>
+          </svg>
+          <span class="sr-only">Next</span>
+        </span>
+      </button>
+    </div>
+  </div>
+  <!-- Fale conosco e localização -->
+  <div class="flex justify-center pb-10">
+    <form class="p-10 flex flex-col justify-between w-1/3">
+      <div class="flex justify-start">
+        <h5 class="mb-4 pb-2 text-3xl font-bold tracking-tight text-[#2B2B2B] dark:text-white">Nós queremos te ajudar!
+        </h5>
+      </div>
+      <div class="mb-6">
+        <label for="name" class="block mb-2 text-sm font-medium text-gray-900 dark:text-white">Nome</label>
+        <input type="text" id="name"
+          class="shadow-sm bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500 dark:shadow-sm-light"
+          placeholder="Seu nome" required>
+      </div>
+      <div class="mb-6">
+        <label for="telefone" class="block mb-2 text-sm font-medium text-gray-900 dark:text-white">Telefone</label>
+        <input type="tel" pattern="[1-9]{2}-[9]{0,1}[6-9]{1}[0-9]{3}-[0-9]{4}" id="tel"
+          class="shadow-sm bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500 dark:shadow-sm-light"
+          placeholder="Telefone: (85) 98552-3162" required>
+      </div>
+      <div class="mb-6">
+        <label for="email" class="block mb-2 text-sm font-medium text-gray-900 dark:text-white">Your email</label>
+        <input type="email" id="email"
+          class="shadow-sm bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500 dark:shadow-sm-light"
+          placeholder="email@gmail.com" required>
+      </div>
+      <div class="mb-6">
+        <label for="message" class="block mb-2 text-sm font-medium text-gray-900 dark:text-white">Your message</label>
+        <textarea id="message" rows="4"
+          class="block p-2.5 w-full text-sm text-gray-900 bg-gray-50 rounded-lg border border-gray-300 focus:ring-gray-300 dark:placeholder-gray-400 dark:text-white dark:bg-gray-800 dark:hover:bg-gray-700 dark:focus:ring-gray-700 dark:border-gray-700"
+          placeholder="Deixe seu comentario..."></textarea>
+      </div>
+
+      <button type="submit"
+        class="text-white bg-gray-800 hover:bg-gray-900 focus:ring-4 focus:outline-none focus:ring-gray-300 font-medium rounded-lg text-sm px-5 py-2.5 text-center dark:bg-gray-800 dark:hover:bg-gray-700 dark:focus:ring-gray-700 dark:border-gray-700">Enviar</button>
+    </form>
+    <div class="ml-10 p-10 flex flex-col w-1/3">
+      <div class="flex flex-col justify-between w-1/2">
+        <h5 class="mb-4 pb-2 text-3xl font-medium tracking-tight text-[#2B2B2B] dark:text-white">Localização
+        </h5>
+      </div>
+      <div class="flex space-x-2 align-center">
+        <div class="flex items-center flex-wrap">
+          <img class="w-6 h-6 mx-3" src="/img/bx_bx-map.svg">
+          </img>
+        </div>
+        <p class="leading-relaxed my-3 ml-2">Encontre-nos em Maceió: Endereço</p>
+      </div>
+      <div class="flex justify-start">
+        <iframe
+          src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d15732.698611221836!2d-35.7391754!3d-9.6661138!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x70145ce7e2f028d%3A0x653cd7ed3851e29a!2sLPD%20-%20Limmerck%20Pac%C3%ADfico%20Dantas%20ADVOCACIA!5e0!3m2!1spt-BR!2sbr!4v1683842384844!5m2!1spt-BR!2sbr"
+          width="100%" height="200" style="border:0;" allowfullscreen="" loading="lazy"
+          referrerpolicy="no-referrer-when-downgrade"></iframe>
+      </div>
+      <div class="flex space-x-2 align-center">
+        <div class="flex items-center flex-wrap">
+          <img class="w-6 h-6 mx-3" src="/img/bx_bx-map.svg">
+          </img>
+        </div>
+        <p class="leading-relaxed my-3 ml-2">Encontre-nos em Arapiraca: Endereço </p>
+      </div>
+      <div class="flex justify-start">
+        <iframe
+          src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d15732.698611221836!2d-35.7391754!3d-9.6661138!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x70145ce7e2f028d%3A0x653cd7ed3851e29a!2sLPD%20-%20Limmerck%20Pac%C3%ADfico%20Dantas%20ADVOCACIA!5e0!3m2!1spt-BR!2sbr!4v1683842384844!5m2!1spt-BR!2sbr"
+          width="100%" height="200" style="border:0;" allowfullscreen="" loading="lazy"
+          referrerpolicy="no-referrer-when-downgrade"></iframe>
+      </div>
+    </div>
+  </div>
+  </div>
+  <!-- Footer -->
+  <div class="bg-no-repeat bg-center bg-cover pt-12" 
+  style="background-image: url('https://lh3.googleusercontent.com/pw/AJFCJaVNjl9ZYkWVSBLSd6fVlsSQjnIheglbAuKYP5WEGKB_HMA_JPha_BRh0Vuz2cHtR1xYAsmeXduSuNaCH-3JX64Gc5gXzdpm1_iEUbAtCSeAQ0y8iVB08HlNzU5BUvtiYMBd2U0dTPClgc5fG1-zMhtrkUSIJHAo57s6LjUvrrT43RB-4M8FCCSfwDEZJMDxg0-GXVvBpE5-J8HXhSEy0yuKhVtuLPXVvbeOHtEkYIA-iGeQasuRs8esGpCxgkkBdPIEPUrPQEXxPXITpDaAncmdwtc-J5PWiGrvlAm3MFLdBbeMwZJkswAJRi7XveeDrlKob8eEuPWGv7GI_tIUMkCCZTF7wRfdQexOgPkhsMqijoyU7MBfxRFjcGVUTNlTnWbeJrC9l7Kb6TA8gobXraZH59zq2JhTy8NRNlWqciWjuecvacU0PSN4btKra9BYQe5qZvXnf6SGDN8f00mxFngk2SKsR4LKo1cJLAK-Ozxx2TtSuNw0vl3C53VHCdIs1_DhB3Rrfga49gX6ZoDRDegxj1YCVc9DvEIBFuc8oXjlM9BwMSPu-iIZjC-DOa6A1VpfRutRWMOcyTO_v1z2-NJpCFOHhh8XmIXxUpEuwewvsdC6PSPWIo5Iu5ME-QMqNh9KHLC2J3dZMLKAIP8Y_vsoG9DpclC0NJw2UF_YJb_BbxRY3EOyry0YW0Bdl1PoExeanOBBaR4WqeoWWYmxeC5DfYx0LRkb6o56_zvbAxVlClHcuLz5bHgq5dy8TEdOXrHK8L1EH5ANLQcnBtHZ2kosZP62OUdMdcOhhLlwXinX0DpG8qYQg2VElir0qa1ZS6ZJK45bQP0fPS09XbyZsZdH9oLA326gvSJtreuAW4Z8grNT76P9Wk3AM2eueej1-mpOa_k5kgXxEgp5zF31ivnEoZj1W1zMNuSucpi8UhEpB6HpcLQ8tZ0MhpjUiuJnx9-FgWsQBetE_vPqMm5KxRolKCxLxeI=w1366-h466-s-no?authuser=0')">
+    <footer>
+      <div class="mx-auto w-full max-w-screen-xl p-4 py-6 lg:py-8">
+        <div class="md:flex md:justify-around">
+          <div class="mb-6 md:mb-0">
+            <a href="#" class="flex items-center">
+              <img src="/img/Limmerk-removebg-preview (3).png" class="h-44 mr-3" alt="Logo" />
+            </a>
+          </div>
+          <div class="ml-6 grid grid-cols-2 gap-8 sm:gap-6 sm:grid-cols-2">
+            <div>
+              <h2 class="mb-6 text-sm font-semibold text-white uppercase dark:text-white">Entre em contato</h2>
+              <ul class="text-white dark:text-gray-400 font-medium">
+                <div class="flex space-x-2 align-center">
+                  <div class="flex items-center flex-wrap bg-[#D0AC6B] rounded-lg">
+                    <img class="w-6 h-6 mx-3" src="/img/telephone.svg">
+                    </img>
+                  </div>
+                  <div class="grid-cols-2 sm:grid-cols-2">
+                    <li></li>
+                    <a href="https://discord.gg/4eeurUVvTy" class="hover:underline leading-relaxed ml-2">Fale
+                      conosco</a>
+                    </li>
+                    <li></li>
+                    <a href="https://discord.gg/4eeurUVvTy" class="hover:underline leading-relaxed ml-2">(85) 98552-3162
+                    </a>
+                  </div>
+                  </li>
+                </div>
+                <div class="flex space-x-2 align-center mt-4">
+                  <div class="flex items-center flex-wrap bg-[#D0AC6B] rounded-lg">
+                    <img class="w-6 h-6 mx-3" src="/img/envelope-at.svg">
+                    </img>
+                  </div>
+                  <div class="grid-cols-2 sm:grid-cols-2">
+                    <li></li>
+                    <a href="https://discord.gg/4eeurUVvTy" class="hover:underline leading-relaxed ml-2">Envie um
+                      email</a>
+                    </li>
+                    <li></li>
+                    <a href="https://discord.gg/4eeurUVvTy"
+                      class="hover:underline leading-relaxed ml-2">johndoe2347@mail.com
+                    </a>
+                  </div>
+                  </li>
+                </div>
+              </ul>
+            </div>
+            <div>
+              <h2 class="mb-6 text-sm font-semibold text-white uppercase dark:text-white">Acompanhe nossas redes
+                sociais!</h2>
+              <ul class="text-white dark:text-gray-400 font-medium">
+                <div class="flex space-x-2 align-center">
+                  <div class="flex items-center flex-wrap bg-[#D0AC6B] rounded-lg">
+                    <img class="w-6 h-12 mx-3" src="/img/instagram.svg">
+                    </img>
+                  </div>
+                  <div class="flex items-center">
+                    <a href="https://discord.gg/4eeurUVvTy" class="hover:underline leading-relaxed ml-2">Instagram</a>
+                    </li>
+                  </div>
+                  </li>
+                </div>
+                <div class="flex space-x-2 align-center mt-4">
+                  <div class="flex items-center flex-wrap bg-[#D0AC6B] rounded-lg">
+                    <img class="w-6 h-12 mx-3" src="/img/facebook.svg">
+                    </img>
+                  </div>
+                  <div class="flex items-center">
+                    <li></li>
+                    <a href="https://discord.gg/4eeurUVvTy" class="hover:underline leading-relaxed ml-2">Facebook</a>
+                    </li>
+                  </div>
+                  </li>
+                </div>
+                <div class="flex space-x-2 align-center mt-4">
+                  <div class="flex items-center flex-wrap bg-[#D0AC6B] rounded-lg">
+                    <img class="w-6 h-12 mx-3" src="/img/linkedin.svg">
+                    </img>
+                  </div>
+                  <div class="flex items-center">
+                    <li></li>
+                    <a href="https://discord.gg/4eeurUVvTy" class="hover:underline leading-relaxed ml-2">LinkedIn</a>
+                    </li>
+                  </div>
+                  </li>
+                </div>
+              </ul>
+            </div>
+          </div>
+        </div>
+        <hr class="my-6 border-[#2B2B2B] sm:mx-auto dark:border-gray-700 lg:my-8" />
+        <div class="sm:flex sm:items-center sm:justify-between">
+          <span class="text-sm text-white sm:text-center dark:text-gray-400">Limmerk Pacífico Dantas © 2023 <a href="https://flowbite.com/"
+              class="hover:underline">Todos os direitos reservados.
+          </span>
+          <span class="text-sm text-white sm:text-center dark:text-gray-400">Feito com amor por GTI Engenharia Jr.>
+        </span>
+        </div>
+      </div>
+    </footer>
+  </div>
+
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/flowbite/1.6.5/flowbite.min.js"></script>
+</body>
+
 </html>
