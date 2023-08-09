@@ -91,12 +91,12 @@
 
     <!-- Banner -->
     <div class="pt-20 pb-16 text-center text-white -mb-0.5">
-      <img class="pb-2 mx-auto pt-8" src="/img/Limmerk (3).webp" alt="">
+      <img  class="pb-2 mx-auto pt-8" src="/img/Limmerk (3).webp" alt="">
       <h3 class="mb-6 mt-2 text-lg font-normal sm:p-2">Atuando de forma eficiente em processos contra o INSS,<br>em
         busca de garantir seus direitos sociais,<br>através de aposentadorias e benefícios.</h3>
       <div></div>
       <a role="button" href="#faleconosco"
-        class="items-center text-[#D0AC6B] bg-[#2B2B2B] border-[#D0AC6B] border rounded hover:[#D0AC6B] hover:bg-[#D0AC6B] hover:border-[#D0AC6B] font-medium text-sm px-4 py-2 text-center lg:mr-3 md:mr-0">Podemos
+        class="items-center text-[#D0AC6B] bg-[#2B2B2B] border-[#D0AC6B] border rounded hover:[#D0AC6B] font-medium text-sm px-4 py-2 text-center lg:mr-3 md:mr-0 hover:bg-[#D0AC6B] hover:border-[#D0AC6B] hover:text-white transition-color duration-200">Podemos
         te ajudar</a>
       <div></div>
       <a role="button" href="#informacoes"
@@ -592,7 +592,7 @@
 
   <!-- Fale conosco e localização -->
   <div class="flex flex-wrap justify-center pb-10 h-full w-full">
-    <form class="p-10 flex flex-col justify-between sm:w-1/2 lg:w-1/3" onsubmit="buttonsubmit()">
+    <form onsubmit="sendEmail(); reset(); return false;" class="p-10 flex flex-col justify-between sm:w-1/2 lg:w-1/3" method="POST" id="form">
       <div class="flex justify-start">
         <h5 class="mb-4 pb-2 text-3xl font-bold tracking-tight text-[#2B2B2B]">Nós queremos te ajudar!
         </h5>
@@ -604,8 +604,8 @@
           placeholder="Seu nome" required>
       </div>
       <div class="mb-6">
-        <label for="telefone" class="block mb-2 text-sm font-medium text-gray-900">Telefone</label>
-        <input type="tel" id="tel"
+        <label for="phone" class="block mb-2 text-sm font-medium text-gray-900">Telefone</label>
+        <input type="tel" id="phone"
           class="shadow-sm bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500 dark:shadow-sm-light"
           placeholder="Telefone" required>
       </div>
@@ -619,7 +619,7 @@
         <label for="message" class="block mb-2 text-sm font-medium text-gray-900">Sua mensagem</label>
         <textarea id="message" rows="4"
           class="block p-2.5 w-full text-sm text-gray-900 bg-gray-50 rounded-lg border border-gray-300 focus:ring-gray-300 dark:placeholder-gray-400 dark:text-white dark:bg-gray-800 dark:hover:bg-gray-700 dark:focus:ring-gray-700 dark:border-gray-700"
-          placeholder="Deixe seu comentario..."></textarea>
+          placeholder="Deixe seu comentario..." required></textarea>
       </div>
 
       <button type="submit"
@@ -778,6 +778,23 @@
 
   <script src="./script.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/flowbite/1.6.5/flowbite.min.js"></script>
+  <script src="https://smtpjs.com/v3/smtp.js"></script>
+  <script>
+    function sendEmail(){
+    Email.send({
+        secureToken: "5e5eec54-852f-4deb-b981-d539bc99257d",
+        To : 'jhennygad3333@alu.ufc.br',
+        From : document.getElementById("email").value,
+        Subject : "New Contact Form Esquiry",
+        Body : "Name: " + document.getElementById("name").value
+        + "<br> Email: " + document.getElementById("email").value
+        + "<br> Telefone: " + document.getElementById("phone").value
+        + "<br> Message " + document.getElementById("message").value
+    }).then(
+      message => alert("Mensagem enviada com sucesso!")
+    );
+}
+  </script>
 </body>
 
 </html>
