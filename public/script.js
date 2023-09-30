@@ -1,32 +1,43 @@
-const fname = document.getElementById('fname').value;
-const email = document.getElementById('email').value;
-const phone = document.getElementById('phone').value;
-const message = document.getElementById('message').value;
-const submit = document.getElementById('form-contact');
+let fname ,email,  phone, message 
 
-submit.addEventListener('submit', (e)=>{
+
+async function handlerSubmit(e) {
   e.preventDefault();
-  console.log("teste");
   
+ fname = document.getElementById('fname').value;
+ email = document.getElementById('email').value;
+ phone = document.getElementById('phone').value;
+ message = document.getElementById('message').value;
+
   let ebody = `
-  <b>Nome: </b>${fname.value}
-  <br>
-  <b>Email: </b>${email.value}
-  <br>
-  <b>Telefone: </b>${phone.value}
-  <br>
-  <b>Mensagem: </b>${message.value}
-  
-  `
+<span style="font-weight: bold;">Nome:</span> ${fname}<br>
+<span style="font-weight: bold;">Email:</span> ${email}<br>
+<span style="font-weight: bold;">Telefone:</span> ${phone}<br>
+<span style="font-weight: bold;">Mensagem:</span><br>
+<p style="color: #555;">${message}</p>
+`;
   //email
-  Email.send({
+  //changkiunmy@gmail.com
+  try {
+    await Email.send({
     SecureToken : "828d3544-cda5-403b-8d1f-4af0dfa68efa",
-    To : 'changkiunmy@gmail.com',
+    To : 'gavawo4313@gekme.com',
     From : "changkiunmy@gmail.com",
-    Subject : "Email teste " + email.value,
+    Subject : "Email de " + fname,
     Body : ebody
-}).then(
-  message => alert(message)
-);
-});
+})
+
+ fname = document.getElementById('fname').value = "";
+ email = document.getElementById('email').value = "";
+ phone = document.getElementById('phone').value= "";
+ message = document.getElementById('message').value= "";
+
+alert("Email enviado!")
+
+  } catch (error) {
+    console.log(error)
+  }
+  
+
+};
   
